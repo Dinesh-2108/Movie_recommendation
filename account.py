@@ -5,6 +5,12 @@ import ast
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+if st.query_params:
+    st.session_state["title"] = st.query_params.get("title","")
+    st.session_state["people"] = st.query_params.get("people","")
+    st.session_state["genre"] = st.query_params.get("genre","")
+    st.session_state['current_page'] = 'search'
+
 if 'current_page' not in st.session_state:
         st.session_state['current_page'] = 'main'
 
@@ -96,10 +102,7 @@ def search_page():
     st.write("***For more ideas you can use glossary page***")
     a,b,c =st.tabs(["title","genre","people"])
     with a:
-        if st.query_params:
-            st.session_state["title"] = st.query_params.get("title","")
-        if "title" not in st.session_state:
-            st.session_state.title =""
+        
         
         title_input = st.text_input("***You can search here base on title***",key="title")
         
@@ -169,10 +172,6 @@ def search_page():
             save_response(title_input,films)
             st.toast("Search Completed",icon="👍")
     with b:
-        if st.query_params:
-            st.session_state["genre"] = st.query_params.get("genre","")
-        if "genre" not in st.session_state:
-            st.session_state.genre =""
         genre_input = st.text_input("***You can search here based on genres***",key="genre")
         
         # Function to display a loading GIF
@@ -241,10 +240,6 @@ def search_page():
             save_response(genre_input,films)
             st.toast("Search Completed",icon="👍")
     with c:
-        if st.query_params:
-            st.session_state["people"] = st.query_params.get("people","")
-        if "people" not in st.session_state:
-            st.session_state.people =""
         user_input = st.text_input("***You can search here based on people***",key="people")
         # Function to display a loading GIF
         def display_loading_gif():
