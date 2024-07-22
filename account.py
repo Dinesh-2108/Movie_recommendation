@@ -105,7 +105,7 @@ def search_page():
         
         # Function to display a loading GIF
         def display_loading_gif():
-            gif_path = r""static/bean.gif
+            gif_path = r"static/bean.gif"
             with open(gif_path, "rb") as gif_file:
                 gif_base64 = base64.b64encode(gif_file.read()).decode("utf-8")
 
