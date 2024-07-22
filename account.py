@@ -48,11 +48,11 @@ def _mainpage():
     
 
 # Extracting the data
-# if 'data_not_loaded':
-#     st.session_state['movie_data_base'] = pd.read_csv("mdb.csv")
-mdb = pd.read_csv("mdb.csv")
-#     st.session_state['data_not_loaded'] = True
-# mdb = st.session_state['movie_data_base']
+if 'data_not_loaded':
+    st.session_state['movie_data_base'] = pd.read_csv("mdb.csv")
+# mdb = pd.read_csv("mdb.csv")
+    st.session_state['data_not_loaded'] = True
+mdb = st.session_state['movie_data_base']
 
 def signup_page():
     st.subheader("Currently this is in developmental stage. You can ignore this & go forword. Thank you for your patience")
