@@ -105,7 +105,7 @@ def search_page():
         
         # Function to display a loading GIF
         def display_loading_gif():
-            gif_path = r"C:\Users\regid\Downloads\python\movie recommendation\Search\static\bean.gif"
+            gif_path = r"static\bean.gif"
             with open(gif_path, "rb") as gif_file:
                 gif_base64 = base64.b64encode(gif_file.read()).decode("utf-8")
 
@@ -177,7 +177,7 @@ def search_page():
         
         # Function to display a loading GIF
         def display_loading_gif():
-            gif_path = r"C:\Users\regid\Downloads\python\movie recommendation\Search\static\bean.gif"
+            gif_path = r"static\bean.gif"
             with open(gif_path, "rb") as gif_file:
                 gif_base64 = base64.b64encode(gif_file.read()).decode("utf-8")
 
@@ -248,7 +248,7 @@ def search_page():
         user_input = st.text_input("***You can search here based on people***",value=st.session_state.people,key="people")
         # Function to display a loading GIF
         def display_loading_gif():
-            gif_path = r"C:\Users\regid\Downloads\python\movie recommendation\Search\static\bean.gif"
+            gif_path = r"Cstatic\bean.gif"
             with open(gif_path, "rb") as gif_file:
                 gif_base64 = base64.b64encode(gif_file.read()).decode("utf-8")
 
