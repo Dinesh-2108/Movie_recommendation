@@ -101,7 +101,7 @@ def search_page():
         if "title" not in st.session_state:
             st.session_state.title =""
         
-        title_input = st.text_input("***You can search here base on title***",value=st.session_state.title,key="title")
+        title_input = st.text_input("***You can search here base on title***",key="title")
         
         # Function to display a loading GIF
         def display_loading_gif():
@@ -173,7 +173,7 @@ def search_page():
             st.session_state["genre"] = st.query_params.get("genre","")
         if "genre" not in st.session_state:
             st.session_state.genre =""
-        genre_input = st.text_input("***You can search here based on genres***",value=st.session_state.genre,key="genre")
+        genre_input = st.text_input("***You can search here based on genres***",key="genre")
         
         # Function to display a loading GIF
         def display_loading_gif():
@@ -245,7 +245,7 @@ def search_page():
             st.session_state["people"] = st.query_params.get("people","")
         if "people" not in st.session_state:
             st.session_state.people =""
-        user_input = st.text_input("***You can search here based on people***",value=st.session_state.people,key="people")
+        user_input = st.text_input("***You can search here based on people***",key="people")
         # Function to display a loading GIF
         def display_loading_gif():
             gif_path = r"static/bean.gif"
