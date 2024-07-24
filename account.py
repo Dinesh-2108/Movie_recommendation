@@ -104,7 +104,7 @@ def search_page():
     with a:
         
         
-        title_input = st.text_input("***You can search here base on title***",key="title")
+        title_input = st.text_input("***You can search here based on title***",key="title")
         
         # Function to display a loading GIF
         def display_loading_gif():
