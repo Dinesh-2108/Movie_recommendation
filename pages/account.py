@@ -47,7 +47,7 @@ def _mainpage():
     with col2:
         st.image("images/avatar.jpg",caption="⭐8.8/10",use_column_width=True)
     with col3:
-        st.image("iamges/interstellar.jpg",caption="⭐9/10",use_column_width=True)
+        st.image("images/interstellar.jpg",caption="⭐9/10",use_column_width=True)
         st.image("images/minions.jpg",caption="⭐7.5/10",use_column_width=True)
     st.divider()
     st.subheader("*Thank you visit again*")
