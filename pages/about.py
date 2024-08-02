@@ -11,5 +11,5 @@ with col1:
     st.subheader("How It Works")
     st.write("Our recommendation engine uses simpe NLP algorithms to analyze your movie preferences and viewing history. We provide personalized movie suggestions tailored to your unique tastes.")    
 with col2:
-    st.image("face.png",use_column_width=True)
+    st.image("images/face.png",use_column_width=True)
 st.divider()

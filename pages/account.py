@@ -42,13 +42,13 @@ def _mainpage():
     col1,col2,col3 =st.columns(3)
     
     with col1:
-        st.image("hulk.jpg",caption="⭐6.5/10",use_column_width=True)
-        st.image("tmnt.jpg",caption="⭐7.1/10",use_column_width=True)
+        st.image("images/hulk.jpg",caption="⭐6.5/10",use_column_width=True)
+        st.image("images/tmnt.jpg",caption="⭐7.1/10",use_column_width=True)
     with col2:
-        st.image("avatar.jpg",caption="⭐8.8/10",use_column_width=True)
+        st.image("images/avatar.jpg",caption="⭐8.8/10",use_column_width=True)
     with col3:
-        st.image("interstellar.jpg",caption="⭐9/10",use_column_width=True)
-        st.image("minions.jpg",caption="⭐7.5/10",use_column_width=True)
+        st.image("iamges/interstellar.jpg",caption="⭐9/10",use_column_width=True)
+        st.image("images/minions.jpg",caption="⭐7.5/10",use_column_width=True)
     st.divider()
     st.subheader("*Thank you visit again*")
     
@@ -166,7 +166,7 @@ def search_page():
                             st.divider()
                             st.write(f"{(movie['overview'].capitalize())}")
             with col2:
-                st.image("man.png",width =500)
+                st.image("images/man.png",width =500)
             def save_response(title_input,films):
                 st.session_state["title: "+ title_input] = {'user_input':title_input,"movies":films}
             save_response(title_input,films)
@@ -234,7 +234,7 @@ def search_page():
                             st.divider()
                             st.write(f"{(movie['overview'].capitalize())}")
             with col2:
-                st.image("man.png",width =500)
+                st.image("images/man.png",width =500)
             def save_response(genre_input,films):
                 st.session_state["genres: "+genre_input] = {'user_input':genre_input,"movies":films}
             save_response(genre_input,films)
@@ -318,7 +318,7 @@ def search_page():
                             st.divider()
                             st.write(f"{(movie['overview'].capitalize())}")
             with col2:
-                st.image("man.png",width =500)
+                st.image("images/man.png",width =500)
             def save_response(user_input,films):
                 st.session_state["people: "+user_input] = {'user_input':user_input,"movies":films}
             save_response(user_input,films)
